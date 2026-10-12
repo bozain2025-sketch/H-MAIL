@@ -1,0 +1,87 @@
+/* MailHub design tokens adapted from skills/macos-mail-ui/assets/tokens.css */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --ui-bg: #F7F9FC;
+  --ui-sidebar: #EEF3F8;
+  --ui-panel: #FFFFFF;
+  --ui-fg: #142538;
+  --ui-fg-muted: #53657B;
+  --ui-border: #D6E0EA;
+  --ui-accent: #176BD3;
+  --ui-fg-on-accent: #FFFFFF;
+  --ui-accent-soft: #E7F1FF;
+  --ui-danger: #A52C3B;
+  --ui-focus: #176BD3;
+  --ui-radius: 9px;
+  --ui-row-height: 64px;
+  --ui-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ui-bg: #111923;
+  --ui-sidebar: #192433;
+  --ui-panel: #162231;
+  --ui-fg: #E9F1FA;
+  --ui-fg-muted: #B2C3D4;
+  --ui-border: #314355;
+  --ui-accent: #80B9FF;
+  --ui-fg-on-accent: #0A1624;
+  --ui-accent-soft: #1E334D;
+  --ui-danger: #FF9AA3;
+  --ui-focus: #80B9FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--ui-fg);
+  background-color: var(--ui-bg);
+  font-family: var(--ui-font);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* BiDi address isolation */
+bdi, .email-bdi {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Custom scrollbars matching macOS */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 130, 140, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 130, 140, 0.4);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ui-focus);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

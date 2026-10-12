@@ -1,0 +1,4 @@
+interface:
+  display_name: "macOS Mail UI Craft"
+  short_description: "Design and QA for a premium Tauri macOS email app"
+  brand_color: "#176BD3"
