@@ -1,0 +1,5 @@
+[
+  {"id":"sample-1","account":"support@example.com","provider":"imap","from":"عميل تجريبي <client@example.org>","subject":"استفسار بخصوص الطلب #4821","snippet":"مرحبًا، أريد معرفة حالة الطلب وموعد التسليم المتوقع.","is_read":false,"has_attachment":false,"received_at":"2026-10-09T08:40:00Z"},
+  {"id":"sample-2","account":"hello@example.net","provider":"gmail","from":"Avery Stone <avery@example.org>","subject":"Design review: three-pane inbox and RTL cases","snippet":"The latest screen captures show improved alignment. Please review long subjects.","is_read":true,"has_attachment":true,"received_at":"2026-10-08T12:12:00Z"},
+  {"id":"sample-3","account":"billing@example.com","provider":"outlook","from":"Accounts <accounts@example.org>","subject":"Invoice INV-0926 – October reconciliation","snippet":"Attached is the synthetic statement for UI testing only.","is_read":false,"has_attachment":true,"received_at":"2026-10-07T15:20:00Z"}
+]
